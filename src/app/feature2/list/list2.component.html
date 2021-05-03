@@ -1,0 +1,10 @@
+<cdk-virtual-scroll-viewport class="content" itemSize="72">
+  <mat-list>
+    <ng-container *cdkVirtualFor="let item of items">
+      <mat-list-item>
+        <app-listitem2 [item]="item"></app-listitem2>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+</cdk-virtual-scroll-viewport>
