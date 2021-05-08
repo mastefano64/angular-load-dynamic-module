@@ -1,9 +1,23 @@
 <div class="pl-4 pr-4">
     <h1>Home</h1> 
-    
+
+    <p>
+        <a target="_blank" href="https://www.linkedin.com/in/stefano-marchisio-sviluppatore-web-angular-javascript-aspnet-fullstack/">
+            <span style="font-size: 22px;">Stefano Marchisio LinkedIn</span>
+        </a> 
+    </p>
+
     <p>
         Questo sample contine 4 pagine in cui vengono caricati dei componenti/moduli
     </p>
+
+    <p>
+        E' possibile utilizzare come ViewContainer sia un elemento HTML che il tag ng-container. La particolarità del tag ng-container è che viene renderizzato come commento, per cui non occupa spazio.
+        <br><br>
+        L'oggetto ViewContainerRef contiene 2 metodi: createEmbeddedView() e createComponent() mediante i quali e' possibile creare EmbeddedView e HostView, le prime sono create usando come modello un “Template” le seconde sono create usando come modello un “Component”.
+        <br><br>
+        I primi 2 esempi innulstrano proprio le tecniche illustrate nell'articolo <a target="_blank" href="https://www.linkedin.com/pulse/come-manipolare-il-dom-da-un-applicazione-angular-stefano-marchisio/">"Come manipolare il DOM da un applicazione Angular"</a>. Gli altri 2 esempi illustrano invece come è possibile caricare in modo dinamico un modulo contenente più componenti, per poi instanziare il componente radice all'interno di un ng-container. 
+    </p>  
 
     <p>
         Page1: Il componente viene caricato utilizzando un ng-container e resolveComponentFactory()/createComponent()<br>       
@@ -20,4 +34,8 @@
     <p>
         Page4: Viene caricato in modo dinamico un modulo che contine dei componenti. Il componente parent viene caricato utilizzando un ng-container e la direttiva ngComponentOutlet (vengono utilizzate async/await)<br>       
     </p>
+
+    <p>
+        <a target="_blank" href="https://github.com/mastefano64/angular-load-dynamic-module">Vai al progetto suGitHub</a>     
+    </p>  
 </div>
